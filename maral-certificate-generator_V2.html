@@ -400,11 +400,11 @@ body.light .cert-no-preview{color:#8b846f;}
     <div class="two-col">
       <div class="field" id="f-hr">
         <label>HR Name</label>
-        <input type="text" id="hrName" value="Yogesh Mishra" />
+        <input type="text" id="hrName" value="YOGESH MISHRA" />
       </div>
       <div class="field" id="f-head">
         <label>Head Name</label>
-        <input type="text" id="headName" value="Shukla RKH" />
+        <input type="text" id="headName" value="SK SHUKLA" />
       </div>
     </div>
 
@@ -463,7 +463,7 @@ body.light .cert-no-preview{color:#8b846f;}
             </div>
             <div class="header-center">
               <h1 style="font-family:'Great Vibes',cursive;font-size:44px;letter-spacing:1px;font-weight:400;">Maral Overseas Limited</h1>
-              <div class="sub-lnj" style="font-size:10.5px;">PO - MARAL SAROVAR, A.B. ROAD, VILL. KHALBUJUNG 451660, DISTRICT - KHARGONE (M.P.) INDIA</div>
+              <div class="sub-lnj" style="font-size:10.5px;">C-126, C Block, Sector 63, Sector 63 Block C, Noida-201301, Uttar Pradesh</div>
               <div class="divider-gold"></div>
               <div class="cert-title">CERTIFICATE OF APPRECIATION</div>
             </div>
@@ -489,7 +489,7 @@ body.light .cert-no-preview{color:#8b846f;}
                 <svg width="130" height="42" viewBox="0 0 130 42"><path d="M8 30 C 20 5, 30 35, 42 15 C 50 3, 58 25, 70 18 C 80 12, 88 30, 100 20 C 108 14, 116 24, 122 14" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round"/></svg>
               </div>
               <div class="sign-line">
-                <div class="sign-name" id="outHrName">Yogesh Mishra</div>
+                <div class="sign-name" id="outHrName">YOGESH MISHRA</div>
                 <div class="sign-role">HR Manager</div>
               </div>
             </div>
@@ -498,7 +498,7 @@ body.light .cert-no-preview{color:#8b846f;}
                 <svg width="130" height="42" viewBox="0 0 130 42"><path d="M8 22 C 18 6, 26 34, 36 20 C 44 8, 54 30, 64 16 Q 70 10, 78 22 C 88 32, 96 8, 106 20 C 112 26, 118 12, 124 18" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round"/></svg>
               </div>
               <div class="sign-line">
-                <div class="sign-name" id="outHeadName">Shukla RKH</div>
+                <div class="sign-name" id="outHeadName">SK SHUKLA</div>
                 <div class="sign-role">Plant Head</div>
               </div>
             </div>
@@ -635,8 +635,8 @@ function updateCertificate(){
   const purpose = getPurposeValue() || '— Purpose —';
   const date = document.getElementById('issueDate').value;
   const time = document.getElementById('issueTime').value;
-  const hr = document.getElementById('hrName').value.trim() || 'Yogesh Mishra';
-  const head = document.getElementById('headName').value.trim() || 'Shukla RKH';
+  const hr = document.getElementById('hrName').value.trim() || 'YOGESH MISHRA';
+  const head = document.getElementById('headName').value.trim() || 'SK SHUKLA';
 
   document.getElementById('outRecipient').textContent = name;
   document.getElementById('outPurpose').textContent = purpose;
@@ -753,8 +753,8 @@ document.getElementById('resetBtn').addEventListener('click', ()=>{
   document.getElementById('purpose').value='';
   document.getElementById('purposeCustom').value='';
   document.getElementById('purposeCustom').style.display='none';
-  document.getElementById('hrName').value='Yogesh Mishra';
-  document.getElementById('headName').value='Shukla RKH';
+  document.getElementById('hrName').value='YOGESH MISHRA';
+  document.getElementById('headName').value='SK SHUKLA';
   setDefaultDateTime();
   ['f-name','f-purpose','f-date','f-time'].forEach(id=>toggleField(id,false));
   updateCertificate();
